@@ -18,5 +18,14 @@ end
 
 # Part III
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  
+
+  if arr.empty?
+    return false
+  elsif arr.length == 1
+    return false
+  elsif arr.length >= 1
+  !!arr.uniq.combination(2).detect { |a, b| a + b == n }
+  end
+  
 end
