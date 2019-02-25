@@ -13,7 +13,11 @@ class Dessert
     @calories<200
   end
   def delicious?
-    true
+    if @flavor == "licorice"
+      false
+    else
+      true
+    end
   end
 end
 
