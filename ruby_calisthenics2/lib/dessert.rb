@@ -1,5 +1,5 @@
 class Dessert
-  # add code for setters and getters
+  # add code for setters and getter
   
   attr_accessor :name
   attr_accessor :calories
